@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*css starts here*/
+
+
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+}
+.padding {
+	padding: 4.5rem 0; 
+}
+/*header*/
+header {
+	background-color: #21396A;
+	padding: 1.5rem;
+}
+
+.flexwrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.logo {
+	flex-basis: 12%;
+}
+.logo img {
+	height: auto;
+	width: 100%;
+}
+.navigation {
+	display: flex;
+}
+.navigation a {
+	text-decoration: none;
+    padding-left: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+	color: white;
+	font-size: 1rem;
+	font-weight: 700;
+}
+.navigation i {
+	padding-left: 0.5rem;
+}
+/*hero section*/
+.hero {
+	background: linear-gradient(#2C4C57,#428873);
+	text-align: center;
+	color: #DFF5E1;
+	padding: 4.5rem 0;
+}
+.hero h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1;
+	line-height: 1.5;
+	color: #DFF5E1;
+}
+.hero p {
+	font-size: 1.2rem;
+	letter-spacing: 0.06rem;
+	font-weight: 700;
+	padding-top: 1rem;
+}
+.portfolio {
+	font-weight: 700;
+	letter-spacing: 0.06rem;
+	font-size: 2.5rem;
+	text-align: center;
+	color: #2C3E50;
+	text-transform: uppercase;
+	padding-bottom: 2rem;
+}
+.image {
+	flex-basis: 25%;
+	padding: 3rem 0;
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+}
+.house {
+	background-color: #BA4C63;
+}
+.pizza {
+	background-color: #49A4B6;
+}
+.events {
+	background-color: #130F0F;
+}
+.games {
+	background-color: #2F83C1;
+}
+.washing {
+	background-color: #0F37B5;
+}
+.ship {
+	background-color: #CCB2A3;
+}
+.abouthead{
+	color: #DFF5E1;
+}
+.about {
+	background: linear-gradient(#2C4C57,#428873) no-repeat;
+}
+.aboutpara {
+	display: flex;
+	justify-content: center;
+	color: #D9F1DD;
+	font-size: 1rem;
+	line-height: 1.5;
+	letter-spacing: 0.06rem;
+	
+
+}
+.aboutpara p {
+	flex-basis: 25%;
+	padding: 0 1.5rem 4rem 1.5rem;
+}
+.btn {
+	background-color: white;
+	font-size: 0.8rem;
+	font-weight: 700;
+	padding: 0.5rem 1.8rem;
+	border: 0.06rem solid black;
+	border-radius: 0.2rem;
+	display: block;
+	margin: 0 auto;
+}
+.contact {
+	display: flex;
+	justify-content: center;
+}
+.contact p {
+	color: black;
+	flex-basis: 50%;
+}
+.last {
+	background-color: #2C3E50;
+}
+.address {
+	display: flex;	
+	color: #DFF5E1;
+	/*align-items: baseline;*/
+	justify-content: space-around;
+}
+.location {
+	flex-basis: 25%;
+}
+.location h3 {
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.location p{
+	letter-spacing: 0.06rem;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+.location i {
+	padding-top: 1.7rem;
+	padding-right: 0.8rem;
+}
+.altcampus {
+	color: #37B667;
+}
+footer {
+	background-color: #19242E;
+	padding:1.6rem 0;
+	text-align: center;
+	color: white;
+	font-size: 0.8rem;
+}
