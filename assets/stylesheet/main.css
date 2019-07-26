@@ -71,7 +71,7 @@ body {
 /*header*/
 header {
 	background-color: #21396A;
-	padding: 1.5rem;
+	padding: 1.5rem 0;
 }
 
 .flexwrapper {
@@ -89,6 +89,7 @@ header {
 }
 .navigation {
 	display: flex;
+	flex-wrap: wrap;
 }
 .navigation a {
 	text-decoration: none;
@@ -170,6 +171,7 @@ header {
 	font-size: 1rem;
 	line-height: 1.5;
 	letter-spacing: 0.06rem;
+	flex-wrap: wrap;
 	
 
 }
@@ -191,6 +193,26 @@ header {
 	display: flex;
 	justify-content: center;
 }
+form {
+	flex-basis: 50%;
+}
+.form {
+	display: block;
+	width: 100%;
+	border: none;
+	color: #617E9E;
+	border-bottom: 0.06rem solid #617E9E ;
+	margin-bottom: 1.5rem;
+	padding-bottom: 1rem;
+}
+.sub {
+	margin: 0;
+	background-color: #326D5E;
+	color: white;
+}
+.maps {
+	background-color: #BDC7D2;
+}
 .contact p {
 	color: black;
 	flex-basis: 50%;
@@ -203,24 +225,33 @@ header {
 	color: #DFF5E1;
 	/*align-items: baseline;*/
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .location {
 	flex-basis: 25%;
 }
 .location h3 {
 	text-transform: uppercase;
-	padding-bottom: 1rem;
 	font-weight: bold;
-	font-size: 1.1rem;
+	font-size: 1.3rem;
+	padding: 1rem 0;
 }
 .location p{
 	letter-spacing: 0.06rem;
 	font-size: 1rem;
 	line-height: 1.5;
+	padding: 1rem 0;
+	
 }
-.location i {
-	padding-top: 1.7rem;
-	padding-right: 0.8rem;
+.circle {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	border: 0.06rem solid white;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
 }
 .altcampus {
 	color: #37B667;
@@ -231,4 +262,51 @@ footer {
 	text-align: center;
 	color: white;
 	font-size: 0.8rem;
+}
+@media all  and (max-width: 768px) {
+	html{
+		font-size: 10px;
+	}
+	.header-wrapper {
+		display: block;
+
+	}
+	.logo {
+		padding-bottom: 1rem;
+		width: 20%;
+		margin: 0 auto;
+		text-align: center;
+
+	}
+	.aboutpara p, .location {
+		flex-basis: 100%;
+		justify-content: center;
+
+
+	}
+
+	.navigation li {
+		flex-basis: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 0;
+	}
+	.navigation a {
+		padding-left: 0;
+
+	}
+	.location {
+		padding-left: 2rem;
+	}
+	.image {
+		flex-basis: 100%;
+
+	}
+	.circle {
+		padding: 1rem 0;
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
 }
